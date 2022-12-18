@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		446A624C294F6BFA00089F7E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446A624B294F6BFA00089F7E /* HomeViewModel.swift */; };
+		446A624E294F6D4900089F7E /* Budget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446A624D294F6D4900089F7E /* Budget.swift */; };
+		44DEBB96294F52FE004BF50F /* TransactionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DEBB95294F52FE004BF50F /* TransactionService.swift */; };
+		44DEBB99294F5C1A004BF50F /* Storable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DEBB98294F5C1A004BF50F /* Storable.swift */; };
+		44DEBB9B294F5C4D004BF50F /* UserDefaultsStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DEBB9A294F5C4D004BF50F /* UserDefaultsStoreManager.swift */; };
+		44DEBB9D294F5D8A004BF50F /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DEBB9C294F5D8A004BF50F /* Expense.swift */; };
 		BE35470F294F4991009766B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE35470E294F4991009766B9 /* AppDelegate.swift */; };
 		BE354711294F4991009766B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE354710294F4991009766B9 /* SceneDelegate.swift */; };
 		BE354713294F4991009766B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE354712294F4991009766B9 /* ViewController.swift */; };
@@ -16,6 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		446A624B294F6BFA00089F7E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		446A624D294F6D4900089F7E /* Budget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Budget.swift; sourceTree = "<group>"; };
+		44DEBB95294F52FE004BF50F /* TransactionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionService.swift; sourceTree = "<group>"; };
+		44DEBB98294F5C1A004BF50F /* Storable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storable.swift; sourceTree = "<group>"; };
+		44DEBB9A294F5C4D004BF50F /* UserDefaultsStoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsStoreManager.swift; sourceTree = "<group>"; };
+		44DEBB9C294F5D8A004BF50F /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 		BE35470B294F4991009766B9 /* PMM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PMM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE35470E294F4991009766B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE354710294F4991009766B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +49,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44DEBB97294F5BF1004BF50F /* TransactionService */ = {
+			isa = PBXGroup;
+			children = (
+				44DEBB95294F52FE004BF50F /* TransactionService.swift */,
+				44DEBB98294F5C1A004BF50F /* Storable.swift */,
+				44DEBB9A294F5C4D004BF50F /* UserDefaultsStoreManager.swift */,
+			);
+			path = TransactionService;
+			sourceTree = "<group>";
+		};
+		44DEBB9E294F5D91004BF50F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				44DEBB9C294F5D8A004BF50F /* Expense.swift */,
+				446A624D294F6D4900089F7E /* Budget.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		BE354702294F4991009766B9 = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +90,9 @@
 				BE35470E294F4991009766B9 /* AppDelegate.swift */,
 				BE354710294F4991009766B9 /* SceneDelegate.swift */,
 				BE354712294F4991009766B9 /* ViewController.swift */,
+				446A624B294F6BFA00089F7E /* HomeViewModel.swift */,
+				44DEBB9E294F5D91004BF50F /* Model */,
+				44DEBB97294F5BF1004BF50F /* TransactionService */,
 				BE354714294F4991009766B9 /* Main.storyboard */,
 				BE354717294F4992009766B9 /* Assets.xcassets */,
 				BE354719294F4992009766B9 /* LaunchScreen.storyboard */,
@@ -138,8 +172,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44DEBB9D294F5D8A004BF50F /* Expense.swift in Sources */,
+				446A624C294F6BFA00089F7E /* HomeViewModel.swift in Sources */,
 				BE354713294F4991009766B9 /* ViewController.swift in Sources */,
 				BE35470F294F4991009766B9 /* AppDelegate.swift in Sources */,
+				44DEBB9B294F5C4D004BF50F /* UserDefaultsStoreManager.swift in Sources */,
+				446A624E294F6D4900089F7E /* Budget.swift in Sources */,
+				44DEBB99294F5C1A004BF50F /* Storable.swift in Sources */,
+				44DEBB96294F52FE004BF50F /* TransactionService.swift in Sources */,
 				BE354711294F4991009766B9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,6 +361,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
