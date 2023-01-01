@@ -7,32 +7,80 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		446A624C294F6BFA00089F7E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446A624B294F6BFA00089F7E /* HomeViewModel.swift */; };
+		4415193D295E085B000B8064 /* SpendingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4415193B295E085B000B8064 /* SpendingCell.swift */; };
+		4415193E295E085B000B8064 /* SpendingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4415193C295E085B000B8064 /* SpendingCell.xib */; };
+		446A624C294F6BFA00089F7E /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446A624B294F6BFA00089F7E /* MainViewModel.swift */; };
 		446A624E294F6D4900089F7E /* Budget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446A624D294F6D4900089F7E /* Budget.swift */; };
+		44DAA15F2950D1CF00BA8582 /* LocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DAA15E2950D1CF00BA8582 /* LocalData.swift */; };
+		44DAA1612950D3B300BA8582 /* DailyLimitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DAA1602950D3B300BA8582 /* DailyLimitsViewModel.swift */; };
+		44DAA170295CC20D00BA8582 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DAA16F295CC20D00BA8582 /* AppCoordinator.swift */; };
+		44DAA173295CC29100BA8582 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DAA172295CC29100BA8582 /* Coordinator.swift */; };
+		44DAA175295CC2BE00BA8582 /* MainViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DAA174295CC2BE00BA8582 /* MainViewCoordinator.swift */; };
+		44DAA177295CC32C00BA8582 /* SpendingDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DAA176295CC32C00BA8582 /* SpendingDetailCoordinator.swift */; };
+		44DAA17A295CD47A00BA8582 /* DailyLimitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DAA178295CD47A00BA8582 /* DailyLimitViewController.swift */; };
+		44DAA17B295CD47A00BA8582 /* DailyLimitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44DAA179295CD47A00BA8582 /* DailyLimitViewController.xib */; };
+		44DAA17F295CD4A900BA8582 /* SpendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DAA17D295CD4A900BA8582 /* SpendingViewController.swift */; };
+		44DAA180295CD4A900BA8582 /* SpendingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44DAA17E295CD4A900BA8582 /* SpendingViewController.xib */; };
+		44DAA182295CD4CB00BA8582 /* SpendingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DAA181295CD4CB00BA8582 /* SpendingViewModel.swift */; };
+		44DAA185295CE03A00BA8582 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DAA183295CE03A00BA8582 /* MainViewController.swift */; };
+		44DAA186295CE03A00BA8582 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44DAA184295CE03A00BA8582 /* MainViewController.xib */; };
+		44DAA188295CE9CE00BA8582 /* DailyLimitCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DAA187295CE9CE00BA8582 /* DailyLimitCoordinator.swift */; };
 		44DEBB96294F52FE004BF50F /* TransactionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DEBB95294F52FE004BF50F /* TransactionService.swift */; };
 		44DEBB99294F5C1A004BF50F /* Storable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DEBB98294F5C1A004BF50F /* Storable.swift */; };
 		44DEBB9B294F5C4D004BF50F /* UserDefaultsStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DEBB9A294F5C4D004BF50F /* UserDefaultsStoreManager.swift */; };
-		44DEBB9D294F5D8A004BF50F /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DEBB9C294F5D8A004BF50F /* Expense.swift */; };
+		44DEBB9D294F5D8A004BF50F /* Spending.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DEBB9C294F5D8A004BF50F /* Spending.swift */; };
+		44ED994A295E3B5D000C1D7F /* LimitsLocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44ED9949295E3B5D000C1D7F /* LimitsLocalStore.swift */; };
+		44ED994C295E3BF4000C1D7F /* BudgetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44ED994B295E3BF4000C1D7F /* BudgetService.swift */; };
+		44ED994E295ED906000C1D7F /* BudgetLocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44ED994D295ED906000C1D7F /* BudgetLocalStore.swift */; };
+		44ED995129617F12000C1D7F /* PMMOptionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44ED994F29617F12000C1D7F /* PMMOptionsCell.swift */; };
+		44ED995229617F12000C1D7F /* PMMOptionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44ED995029617F12000C1D7F /* PMMOptionsCell.xib */; };
+		44ED995429618457000C1D7F /* OptionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44ED995329618457000C1D7F /* OptionModel.swift */; };
+		44ED995829619839000C1D7F /* SpendingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44ED995629619839000C1D7F /* SpendingsViewController.swift */; };
+		44ED995929619839000C1D7F /* SpendingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44ED995729619839000C1D7F /* SpendingsViewController.xib */; };
+		44ED995B29619867000C1D7F /* SpendingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44ED995A29619867000C1D7F /* SpendingsCoordinator.swift */; };
+		44ED995D2961992E000C1D7F /* SpendingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44ED995C2961992E000C1D7F /* SpendingsViewModel.swift */; };
+		44ED995F2961DC1D000C1D7F /* Date+PMM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44ED995E2961DC1D000C1D7F /* Date+PMM.swift */; };
 		BE35470F294F4991009766B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE35470E294F4991009766B9 /* AppDelegate.swift */; };
-		BE354711294F4991009766B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE354710294F4991009766B9 /* SceneDelegate.swift */; };
-		BE354713294F4991009766B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE354712294F4991009766B9 /* ViewController.swift */; };
-		BE354716294F4991009766B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE354714294F4991009766B9 /* Main.storyboard */; };
 		BE354718294F4992009766B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE354717294F4992009766B9 /* Assets.xcassets */; };
 		BE35471B294F4992009766B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE354719294F4992009766B9 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		446A624B294F6BFA00089F7E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		4415193B295E085B000B8064 /* SpendingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingCell.swift; sourceTree = "<group>"; };
+		4415193C295E085B000B8064 /* SpendingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpendingCell.xib; sourceTree = "<group>"; };
+		446A624B294F6BFA00089F7E /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		446A624D294F6D4900089F7E /* Budget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Budget.swift; sourceTree = "<group>"; };
+		44DAA15E2950D1CF00BA8582 /* LocalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalData.swift; sourceTree = "<group>"; };
+		44DAA1602950D3B300BA8582 /* DailyLimitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyLimitsViewModel.swift; sourceTree = "<group>"; };
+		44DAA16F295CC20D00BA8582 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		44DAA172295CC29100BA8582 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		44DAA174295CC2BE00BA8582 /* MainViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewCoordinator.swift; sourceTree = "<group>"; };
+		44DAA176295CC32C00BA8582 /* SpendingDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingDetailCoordinator.swift; sourceTree = "<group>"; };
+		44DAA178295CD47A00BA8582 /* DailyLimitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyLimitViewController.swift; sourceTree = "<group>"; };
+		44DAA179295CD47A00BA8582 /* DailyLimitViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DailyLimitViewController.xib; sourceTree = "<group>"; };
+		44DAA17D295CD4A900BA8582 /* SpendingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingViewController.swift; sourceTree = "<group>"; };
+		44DAA17E295CD4A900BA8582 /* SpendingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpendingViewController.xib; sourceTree = "<group>"; };
+		44DAA181295CD4CB00BA8582 /* SpendingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingViewModel.swift; sourceTree = "<group>"; };
+		44DAA183295CE03A00BA8582 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		44DAA184295CE03A00BA8582 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		44DAA187295CE9CE00BA8582 /* DailyLimitCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyLimitCoordinator.swift; sourceTree = "<group>"; };
 		44DEBB95294F52FE004BF50F /* TransactionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionService.swift; sourceTree = "<group>"; };
 		44DEBB98294F5C1A004BF50F /* Storable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storable.swift; sourceTree = "<group>"; };
 		44DEBB9A294F5C4D004BF50F /* UserDefaultsStoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsStoreManager.swift; sourceTree = "<group>"; };
-		44DEBB9C294F5D8A004BF50F /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		44DEBB9C294F5D8A004BF50F /* Spending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spending.swift; sourceTree = "<group>"; };
+		44ED9949295E3B5D000C1D7F /* LimitsLocalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitsLocalStore.swift; sourceTree = "<group>"; };
+		44ED994B295E3BF4000C1D7F /* BudgetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetService.swift; sourceTree = "<group>"; };
+		44ED994D295ED906000C1D7F /* BudgetLocalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetLocalStore.swift; sourceTree = "<group>"; };
+		44ED994F29617F12000C1D7F /* PMMOptionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMMOptionsCell.swift; sourceTree = "<group>"; };
+		44ED995029617F12000C1D7F /* PMMOptionsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PMMOptionsCell.xib; sourceTree = "<group>"; };
+		44ED995329618457000C1D7F /* OptionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionModel.swift; sourceTree = "<group>"; };
+		44ED995629619839000C1D7F /* SpendingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingsViewController.swift; sourceTree = "<group>"; };
+		44ED995729619839000C1D7F /* SpendingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpendingsViewController.xib; sourceTree = "<group>"; };
+		44ED995A29619867000C1D7F /* SpendingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingsCoordinator.swift; sourceTree = "<group>"; };
+		44ED995C2961992E000C1D7F /* SpendingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingsViewModel.swift; sourceTree = "<group>"; };
+		44ED995E2961DC1D000C1D7F /* Date+PMM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+PMM.swift"; sourceTree = "<group>"; };
 		BE35470B294F4991009766B9 /* PMM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PMM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE35470E294F4991009766B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BE354710294F4991009766B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BE354712294F4991009766B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BE354715294F4991009766B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE354717294F4992009766B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE35471A294F4992009766B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE35471C294F4992009766B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,23 +97,108 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		44DEBB97294F5BF1004BF50F /* TransactionService */ = {
+		4415193F295E13D6000B8064 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4415193B295E085B000B8064 /* SpendingCell.swift */,
+				4415193C295E085B000B8064 /* SpendingCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		44DAA15D2950D1AD00BA8582 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				44DAA15E2950D1CF00BA8582 /* LocalData.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		44DAA1622950D43500BA8582 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				44ED995E2961DC1D000C1D7F /* Date+PMM.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		44DAA1652950D48000BA8582 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4415193F295E13D6000B8064 /* View */,
+				446A624B294F6BFA00089F7E /* MainViewModel.swift */,
+				44DAA183295CE03A00BA8582 /* MainViewController.swift */,
+				44DAA184295CE03A00BA8582 /* MainViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		44DAA1662950D4D300BA8582 /* DailyLimits */ = {
+			isa = PBXGroup;
+			children = (
+				44DAA1602950D3B300BA8582 /* DailyLimitsViewModel.swift */,
+				44DAA178295CD47A00BA8582 /* DailyLimitViewController.swift */,
+				44DAA179295CD47A00BA8582 /* DailyLimitViewController.xib */,
+			);
+			path = DailyLimits;
+			sourceTree = "<group>";
+		};
+		44DAA171295CC21400BA8582 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				44DAA172295CC29100BA8582 /* Coordinator.swift */,
+				44DAA16F295CC20D00BA8582 /* AppCoordinator.swift */,
+				44DAA174295CC2BE00BA8582 /* MainViewCoordinator.swift */,
+				44DAA176295CC32C00BA8582 /* SpendingDetailCoordinator.swift */,
+				44ED995A29619867000C1D7F /* SpendingsCoordinator.swift */,
+				44DAA187295CE9CE00BA8582 /* DailyLimitCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		44DAA17C295CD48800BA8582 /* Spending */ = {
+			isa = PBXGroup;
+			children = (
+				44DAA17D295CD4A900BA8582 /* SpendingViewController.swift */,
+				44DAA17E295CD4A900BA8582 /* SpendingViewController.xib */,
+				44DAA181295CD4CB00BA8582 /* SpendingViewModel.swift */,
+				44ED994F29617F12000C1D7F /* PMMOptionsCell.swift */,
+				44ED995029617F12000C1D7F /* PMMOptionsCell.xib */,
+				44ED995329618457000C1D7F /* OptionModel.swift */,
+			);
+			path = Spending;
+			sourceTree = "<group>";
+		};
+		44DEBB97294F5BF1004BF50F /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				44DEBB95294F52FE004BF50F /* TransactionService.swift */,
+				44ED994B295E3BF4000C1D7F /* BudgetService.swift */,
 				44DEBB98294F5C1A004BF50F /* Storable.swift */,
 				44DEBB9A294F5C4D004BF50F /* UserDefaultsStoreManager.swift */,
+				44ED9949295E3B5D000C1D7F /* LimitsLocalStore.swift */,
+				44ED994D295ED906000C1D7F /* BudgetLocalStore.swift */,
 			);
-			path = TransactionService;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		44DEBB9E294F5D91004BF50F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				44DEBB9C294F5D8A004BF50F /* Expense.swift */,
+				44DEBB9C294F5D8A004BF50F /* Spending.swift */,
 				446A624D294F6D4900089F7E /* Budget.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		44ED995529619809000C1D7F /* SpendingsList */ = {
+			isa = PBXGroup;
+			children = (
+				44ED995629619839000C1D7F /* SpendingsViewController.swift */,
+				44ED995729619839000C1D7F /* SpendingsViewController.xib */,
+				44ED995C2961992E000C1D7F /* SpendingsViewModel.swift */,
+			);
+			path = SpendingsList;
 			sourceTree = "<group>";
 		};
 		BE354702294F4991009766B9 = {
@@ -87,13 +220,16 @@
 		BE35470D294F4991009766B9 /* PMM */ = {
 			isa = PBXGroup;
 			children = (
-				BE35470E294F4991009766B9 /* AppDelegate.swift */,
-				BE354710294F4991009766B9 /* SceneDelegate.swift */,
-				BE354712294F4991009766B9 /* ViewController.swift */,
-				446A624B294F6BFA00089F7E /* HomeViewModel.swift */,
+				44DAA171295CC21400BA8582 /* Coordinator */,
+				44DAA1652950D48000BA8582 /* Home */,
+				44DAA17C295CD48800BA8582 /* Spending */,
+				44ED995529619809000C1D7F /* SpendingsList */,
+				44DAA1662950D4D300BA8582 /* DailyLimits */,
 				44DEBB9E294F5D91004BF50F /* Model */,
-				44DEBB97294F5BF1004BF50F /* TransactionService */,
-				BE354714294F4991009766B9 /* Main.storyboard */,
+				44DAA1622950D43500BA8582 /* Extensions */,
+				44DAA15D2950D1AD00BA8582 /* DataSource */,
+				44DEBB97294F5BF1004BF50F /* Services */,
+				BE35470E294F4991009766B9 /* AppDelegate.swift */,
 				BE354717294F4992009766B9 /* Assets.xcassets */,
 				BE354719294F4992009766B9 /* LaunchScreen.storyboard */,
 				BE35471C294F4992009766B9 /* Info.plist */,
@@ -160,8 +296,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE35471B294F4992009766B9 /* LaunchScreen.storyboard in Resources */,
+				44ED995929619839000C1D7F /* SpendingsViewController.xib in Resources */,
+				44ED995229617F12000C1D7F /* PMMOptionsCell.xib in Resources */,
+				4415193E295E085B000B8064 /* SpendingCell.xib in Resources */,
+				44DAA186295CE03A00BA8582 /* MainViewController.xib in Resources */,
 				BE354718294F4992009766B9 /* Assets.xcassets in Resources */,
-				BE354716294F4991009766B9 /* Main.storyboard in Resources */,
+				44DAA17B295CD47A00BA8582 /* DailyLimitViewController.xib in Resources */,
+				44DAA180295CD4A900BA8582 /* SpendingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,29 +313,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44DEBB9D294F5D8A004BF50F /* Expense.swift in Sources */,
-				446A624C294F6BFA00089F7E /* HomeViewModel.swift in Sources */,
-				BE354713294F4991009766B9 /* ViewController.swift in Sources */,
+				44ED995B29619867000C1D7F /* SpendingsCoordinator.swift in Sources */,
+				44DEBB9D294F5D8A004BF50F /* Spending.swift in Sources */,
+				446A624C294F6BFA00089F7E /* MainViewModel.swift in Sources */,
+				44ED995129617F12000C1D7F /* PMMOptionsCell.swift in Sources */,
+				44DAA173295CC29100BA8582 /* Coordinator.swift in Sources */,
+				44ED994C295E3BF4000C1D7F /* BudgetService.swift in Sources */,
 				BE35470F294F4991009766B9 /* AppDelegate.swift in Sources */,
+				44DAA17A295CD47A00BA8582 /* DailyLimitViewController.swift in Sources */,
+				44ED994E295ED906000C1D7F /* BudgetLocalStore.swift in Sources */,
 				44DEBB9B294F5C4D004BF50F /* UserDefaultsStoreManager.swift in Sources */,
+				44DAA170295CC20D00BA8582 /* AppCoordinator.swift in Sources */,
+				44DAA175295CC2BE00BA8582 /* MainViewCoordinator.swift in Sources */,
+				4415193D295E085B000B8064 /* SpendingCell.swift in Sources */,
+				44ED994A295E3B5D000C1D7F /* LimitsLocalStore.swift in Sources */,
+				44DAA188295CE9CE00BA8582 /* DailyLimitCoordinator.swift in Sources */,
+				44ED995429618457000C1D7F /* OptionModel.swift in Sources */,
+				44ED995F2961DC1D000C1D7F /* Date+PMM.swift in Sources */,
 				446A624E294F6D4900089F7E /* Budget.swift in Sources */,
+				44DAA17F295CD4A900BA8582 /* SpendingViewController.swift in Sources */,
+				44ED995829619839000C1D7F /* SpendingsViewController.swift in Sources */,
 				44DEBB99294F5C1A004BF50F /* Storable.swift in Sources */,
+				44ED995D2961992E000C1D7F /* SpendingsViewModel.swift in Sources */,
 				44DEBB96294F52FE004BF50F /* TransactionService.swift in Sources */,
-				BE354711294F4991009766B9 /* SceneDelegate.swift in Sources */,
+				44DAA182295CD4CB00BA8582 /* SpendingViewModel.swift in Sources */,
+				44DAA177295CC32C00BA8582 /* SpendingDetailCoordinator.swift in Sources */,
+				44DAA15F2950D1CF00BA8582 /* LocalData.swift in Sources */,
+				44DAA1612950D3B300BA8582 /* DailyLimitsViewModel.swift in Sources */,
+				44DAA185295CE03A00BA8582 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BE354714294F4991009766B9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BE354715294F4991009766B9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BE354719294F4992009766B9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -327,13 +479,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9GY26Q3Q63;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PMM/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -354,14 +508,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9GY26Q3Q63;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PMM/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

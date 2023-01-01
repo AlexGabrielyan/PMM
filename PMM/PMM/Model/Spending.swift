@@ -8,10 +8,10 @@
 import Foundation
 
 struct Expenses: Codable {
-	var expenses: [Expense]
+	var expenses: [Spending]
 }
 
-struct Expense: Codable, Unifiable {
+struct Spending: Codable, Unifiable {
 	var id: Int
 	let amount: Int
 	let currency: String

@@ -18,23 +18,23 @@ class TransactionService {
 		self.store = ExpensesLocalStore()
 	}
 	
-	func addExpense(expense: Expense) {
+	func addExpense(expense: Spending) {
 		store.addExpense(expense: expense)
 	}
 	
-	func removeExpense(expense: Expense) {
+	func removeExpense(expense: Spending) {
 		store.removeExpense(expense: expense)
 	}
 	
-	func expenseFor(id: Int) -> Expense? {
+	func expenseFor(id: Int) -> Spending? {
 		store.expenseFor(id: id)
 	}
 	
-	func expenses() -> [Expense]? {
+	func expenses() -> [Spending]? {
 		store.expenses()
 	}
 	
-	func expensesForTimePeriod(start: Date, end: Date) -> [Expense]? {
+	func expensesForTimePeriod(start: Date, end: Date) -> [Spending]? {
 		store.expensesForTimePeriod(start: start, end: end)
 	}
 }

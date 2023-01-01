@@ -14,31 +14,31 @@ class ExpensesLocalStore : ExpenceStorable, LocalStorable {
 	let defaults = UserDefaults.standard
 	let expensesKey = "OurExpensesP"
 
-	func addExpense(expense: Expense) {
+	func addExpense(expense: Spending) {
 		var expenses = expenses() ?? []
 		expenses.append(expense)
 		save(expenses: expenses)
 	}
 
-	func expenseFor(id: Int) -> Expense? {
+	func expenseFor(id: Int) -> Spending? {
 		expenses()?.first(where: { $0.id == id})
 	}
 
-	func expenses() -> [Expense]? {
+	func expenses() -> [Spending]? {
 		get(for: expensesKey)?.expenses
 	}
 
-	func removeExpense(expense: Expense) {
+	func removeExpense(expense: Spending) {
 		let expenses = expenses()
 		save(expenses: expenses?.filter({ $0.id != expense.id }))
 	}
 
-	func expensesForTimePeriod(start: Date, end: Date) -> [Expense]? {
+	func expensesForTimePeriod(start: Date, end: Date) -> [Spending]? {
 		let expenses = expenses()
 		return expenses?.filter({ ($0.date >= start && $0.date <= end) })
 	}
 
-	private func save(expenses: [Expense]?) {
+	private func save(expenses: [Spending]?) {
 		if let expenses = expenses {
 			let expensesModel = Expenses(expenses: expenses)
 			set(value: expensesModel, for: expensesKey)

@@ -8,8 +8,8 @@
 import Foundation
 
 struct Budget: Codable {
-	let income: Int
-	let spendings: [Expense]
+	var income: Int
+	let spendings: [Spending]
 	let currency: String
 	let monthlyLimit: Int
 }
