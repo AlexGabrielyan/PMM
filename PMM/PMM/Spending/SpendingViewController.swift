@@ -8,7 +8,7 @@
 import UIKit
 
 struct PMMConstants {
-	static let amountConstants = ["+", "1000", "2000", "3000", "5000", "10000", "15000"]
+	static let amountConstants = ["+", "1000", "2000", "3000", "5000", "10000", "15000", "20000"]
 	static let titleConstants = ["+", "🏡 rent", "🍧 lunch", "🚕 taxi", "🛢 petrol"]
 }
 

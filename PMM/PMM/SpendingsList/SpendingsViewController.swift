@@ -38,6 +38,7 @@ class SpendingsViewController: UIViewController {
 
 	@IBAction func addExpense(_ sender: UIButton) {
 		delegate?.goToAddSpending()
+        sender.backgroundColor = .red
 	}
 }
 

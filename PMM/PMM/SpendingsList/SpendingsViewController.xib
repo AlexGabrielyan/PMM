@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -28,23 +29,29 @@
                     </connections>
                 </tableView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQj-F5-dso">
-                    <rect key="frame" x="334" y="759" width="44" height="44"/>
+                    <rect key="frame" x="312" y="737" width="66" height="66"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="44" id="n6h-Vj-m7S"/>
-                        <constraint firstAttribute="height" constant="44" id="tRf-B3-CYT"/>
+                        <constraint firstAttribute="width" constant="66" id="n6h-Vj-m7S"/>
+                        <constraint firstAttribute="height" constant="66" id="tRf-B3-CYT"/>
                     </constraints>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain">
+                        <backgroundConfiguration key="background" cornerRadius="100">
+                            <color key="backgroundColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </backgroundConfiguration>
                         <attributedString key="attributedTitle">
                             <fragment content="+">
                                 <attributes>
+                                    <color key="NSColor" red="0.88436468414776892" green="0.37643949440598146" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <font key="NSFont" size="30" name="Helvetica"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                 </attributes>
                             </fragment>
                         </attributedString>
                     </buttonConfiguration>
                     <connections>
                         <action selector="addExpense:" destination="-1" eventType="touchUpInside" id="XgX-WM-YQO"/>
+                        <action selector="jjj:" destination="-1" eventType="touchUpInside" id="G6j-F3-ewf"/>
                     </connections>
                 </button>
             </subviews>
@@ -58,7 +65,7 @@
                 <constraint firstItem="f6a-Qk-4aN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="wH9-YG-M3E"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="f6a-Qk-4aN" secondAttribute="trailing" id="x8T-Hb-F0g"/>
             </constraints>
-            <point key="canvasLocation" x="123" y="20"/>
+            <point key="canvasLocation" x="122.90076335877862" y="19.718309859154932"/>
         </view>
     </objects>
     <resources>

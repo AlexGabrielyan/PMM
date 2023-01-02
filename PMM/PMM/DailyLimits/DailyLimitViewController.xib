@@ -34,12 +34,20 @@
                     </connections>
                 </tableView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZP6-Mm-yt1">
-                    <rect key="frame" x="332" y="742.33333333333337" width="41" height="48.666666666666629"/>
+                    <rect key="frame" x="307" y="725" width="66" height="66"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="66" id="3gL-nJ-QtK"/>
+                        <constraint firstAttribute="width" constant="66" id="P7T-vq-P03"/>
+                    </constraints>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain">
+                        <backgroundConfiguration key="background" cornerRadius="100">
+                            <color key="backgroundColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </backgroundConfiguration>
                         <attributedString key="attributedTitle">
                             <fragment content="+">
                                 <attributes>
+                                    <color key="NSColor" red="1" green="0.39928844268485442" blue="0.98762903639473687" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <font key="NSFont" size="30" name="Helvetica"/>
                                 </attributes>
                             </fragment>

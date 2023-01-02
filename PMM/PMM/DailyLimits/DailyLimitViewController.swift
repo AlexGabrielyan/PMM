@@ -50,6 +50,8 @@ class DailyLimitViewController: UIViewController {
 
 	@IBAction func addSpending(_ sender: UIButton) {
 		delegate?.goToAddSpending()
+        sender.backgroundColor = .red
+
 	}
 
 	@objc func saveTapped() {
