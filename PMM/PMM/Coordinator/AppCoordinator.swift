@@ -24,6 +24,9 @@ class ApplicationCoordinator: Coordinator {
 	func start() {
 		window.rootViewController = rootViewController
 		mainCoordinator.start()
+		if BudgetService().getBudget() == nil {
+			mainCoordinator.goToEditDailyLimit()
+		}
 		window.makeKeyAndVisible()
 	}
 

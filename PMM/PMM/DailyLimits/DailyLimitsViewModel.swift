@@ -26,7 +26,11 @@ final class DailyLimitsViewModel {
 	}
 
 	var totalAmount: String? {
-		String(spendings?.map({ $0.amount }).reduce(0, +) ?? 0) + " AMD"
+		String(totalAmountNumber ?? 0) + " AMD"
+	}
+
+	var totalAmountNumber: Int? {
+		spendings?.map({ $0.amount }).reduce(0, +)
 	}
 
 	var cellModels: [SpendingCellModel]? {
@@ -35,7 +39,7 @@ final class DailyLimitsViewModel {
 
 	func save() {
 		let incomeAmount = Int(income ?? "0") ?? 0
-		let spendingsAmount = Int(totalAmount ?? "0") ?? 0
+		let spendingsAmount = totalAmountNumber ?? 0
 		let bugdet = Budget(income: incomeAmount,
 												spendings: spendings ?? [],
 												currency: "AMD",

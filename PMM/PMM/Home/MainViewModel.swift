@@ -44,4 +44,10 @@ class MainViewModel {
 													 date: Date())
 		transactionService.addExpense(expense: spending)
 	}
+
+	func removeExpense(spending: Spending?) {
+		if let spending = spending {
+			transactionService.removeExpense(expense: spending)
+		}
+	}
 }

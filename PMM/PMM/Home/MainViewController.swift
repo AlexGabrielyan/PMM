@@ -59,9 +59,6 @@ class MainViewController: UIViewController {
 	@IBAction func viewSpendingsList(_ sender: UIButton) {
 		delegate?.goToSpendingList()
 	}
-
-	@IBAction func removeExpense(_ sender: UIButton) {
-	}
 }
 
 extension MainViewController: UITableViewDelegate, UITableViewDataSource {
@@ -78,6 +75,14 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
 
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		delegate?.goToSpending(spending: viewModel?.expences?[indexPath.row] ?? Spending(id: -1, amount: 0, currency: "AMD", description: "", date: Date()))
+	}
+
+	func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+		if editingStyle == .delete {
+			viewModel?.removeExpense(spending: viewModel?.expences?[indexPath.row])
+			tableView.deleteRows(at: [indexPath], with: .fade)
+			setupUI()
+		}
 	}
 }
 

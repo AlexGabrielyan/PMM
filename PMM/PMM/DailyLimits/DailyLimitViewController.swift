@@ -39,7 +39,8 @@ class DailyLimitViewController: UIViewController {
 	func updateUI() {
 		if let viewModel = viewModel {
 			amountTextField.text = viewModel.income
-			totalAmountLabel.text = viewModel.totalAmount 
+			totalAmountLabel.text = viewModel.totalAmount
+			spendingsListTableView.reloadData()
 		}
 	}
 
