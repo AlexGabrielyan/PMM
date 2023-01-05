@@ -18,10 +18,14 @@ class BudgetService {
 		store.addOrUpdate(budget: budget)
 	}
 
-	func addExpense(expense: Spending) {
+	func addExpense(spending: Spending) {
 		let budget = getBudget()
 		var spendings = budget?.spendings ?? []
-		spendings.append(expense)
+		if let index = budget?.spendings.firstIndex(where: { $0.id == spending.id }) {
+			spendings[index] = spending
+		} else {
+			spendings.append(spending)
+		}
 		let newBudget = Budget(income: budget?.income ?? 0,
 												spendings: spendings,
 												currency: "AMD",
@@ -29,6 +33,15 @@ class BudgetService {
 		store.addOrUpdate(budget: newBudget)
 	}
 
+	func remove(spending: Spending) {
+		let budget = getBudget()
+		let spendings = budget?.spendings.filter({ $0.id != spending.id })
+		let newBudget = Budget(income: budget?.income ?? 0,
+												spendings: spendings ?? [],
+												currency: "AMD",
+												monthlyLimit: budget?.monthlyLimit ?? 0)
+		store.addOrUpdate(budget: newBudget)
+	}
 
 	func getBudget() -> Budget? {
 		store.getBudget()

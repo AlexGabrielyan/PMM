@@ -26,7 +26,6 @@ class DailyLimitViewController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-
 		initialConfig()
 		updateUI()
 	}
@@ -76,6 +75,13 @@ extension DailyLimitViewController: UITableViewDelegate, UITableViewDataSource {
 
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		delegate?.goToSpending(spending: viewModel?.spendings?[indexPath.row])
+	}
+
+	func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+		if editingStyle == .delete {
+			viewModel?.removeSpending(index: indexPath.row)
+			updateUI()
+		}
 	}
 }
 

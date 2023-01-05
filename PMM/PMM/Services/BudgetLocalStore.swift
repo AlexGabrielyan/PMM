@@ -9,6 +9,7 @@ import Foundation
 
 class BudgetLocalStore: LocalStorable, BudgetStorable {
 
+
 	typealias Entity = Budget
 
 	let defaults = UserDefaults.standard

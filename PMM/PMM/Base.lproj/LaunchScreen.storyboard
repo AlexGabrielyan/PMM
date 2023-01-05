@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fT9-ha-jrX">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -16,15 +17,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PMM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zH5-sL-1uE">
-                                <rect key="frame" x="152.66666666666666" y="404.66666666666669" width="88" height="43"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="36"/>
-                                <color key="textColor" systemColor="linkColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zH5-sL-1uE">
+                                <rect key="frame" x="155.66666666666666" y="404.66666666666669" width="82" height="43"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="P">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="linkColor"/>
+                                            <font key="NSFont" metaFont="system" size="36"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="M">
+                                        <attributes>
+                                            <color key="NSColor" red="0.56653911564625847" green="0.37481403350830078" blue="0.9983675479888916" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" metaFont="system" size="36"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="36"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="M">
+                                        <attributes>
+                                            <color key="NSColor" red="0.65720519012942602" green="0.37481403350830078" blue="0.9983675479888916" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" metaFont="system" size="36"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eYD-Ci-uMT"/>
-                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="zH5-sL-1uE" firstAttribute="centerY" secondItem="9xq-Ei-Gtd" secondAttribute="centerY" id="UAU-dW-OSa"/>
                             <constraint firstItem="zH5-sL-1uE" firstAttribute="centerX" secondItem="9xq-Ei-Gtd" secondAttribute="centerX" id="nkk-Dn-Lsx"/>
@@ -39,9 +59,6 @@
     <resources>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

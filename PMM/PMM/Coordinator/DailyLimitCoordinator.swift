@@ -29,10 +29,12 @@ class DailyLimitCoordinator: Coordinator {
 
 extension DailyLimitCoordinator: DailyLimitViewControllerDelegate {
 	func goToSpending(spending: Spending?) {
+		spendingCoordinator?.spending = spending
 		spendingCoordinator?.start()
 	}
 
 	func goToAddSpending() {
+		spendingCoordinator?.spending = nil
 		spendingCoordinator?.start()
 	}
 

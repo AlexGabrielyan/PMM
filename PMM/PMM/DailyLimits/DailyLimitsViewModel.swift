@@ -46,4 +46,10 @@ final class DailyLimitsViewModel {
 												monthlyLimit: incomeAmount - spendingsAmount)
 		budgetService.addOrUpdate(budget: bugdet)
 	}
+
+	func removeSpending(index: Int) {
+		if let spending = spendings?[index] {
+			budgetService.remove(spending: spending)
+		}
+	}
 }

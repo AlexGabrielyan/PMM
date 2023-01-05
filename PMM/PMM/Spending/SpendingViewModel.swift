@@ -35,16 +35,17 @@ final class SpendingViewModel {
 	}
 
 	func saveExpense() {
-		let expense = Spending(id: expenseDate?.timeIntervalSinceNow.exponent ?? 1,
+		let expenseDate = expenseDate ?? Date()
+		let expense = Spending(id: Int(expenseDate.timeIntervalSince1970),
 													 amount: Int(expenseAmount ?? "0") ?? 0,
 													 currency: expenseCurrency ?? "AMD",
 													 description: expenseTitle ?? "expense",
-													 date: expenseDate ?? Date())
+													 date: expenseDate)
 		switch expenseType {
 		case .ordinary:
 			transactionService.addExpense(expense: expense)
 		case .monthly:
-			budgetService.addExpense(expense: expense)
+			budgetService.addExpense(spending: expense)
 		case .none:
 			break
 		}
